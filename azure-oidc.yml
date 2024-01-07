@@ -3,6 +3,7 @@ on: [push, workflow_dispatch]
 jobs:
   azuread:
     runs-on: ubuntu-latest
+    
     steps:
     - name: Login to Azure with OIDC
       uses: azure/login@v1

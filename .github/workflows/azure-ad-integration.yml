@@ -7,5 +7,4 @@ jobs:
     - name: Login to Microsoft Azure
       shell: pwsh
       run: |
-        az login --service-principal --tenant ${{ sectrets.AZURE_ACTIVE_DIRECTORY_TENANT }} --username ${{ secrets.AZURE_APP_REGISTRATION }} --password ${{ secrets.AZURE_CLIENT_SECRET }}
-        
+        az login --service-principal --tenant ${{ secrets.AZURE_ACTIVE_DIRECTORY_TENANT }} --username ${{ secrets.AZURE_APP_REGISTRATION }} --password ${{ secrets.AZURE_CLIENT_SECRET }}
